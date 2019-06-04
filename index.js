@@ -11,7 +11,7 @@ function handleClick(e) {
 
 function greet(timeString){
   
-  hour_min = timeString.split(":")
+  let hour_min = timeString.split(":")
   
   if (hour_min[0] < 12) {
     return "Good Morning"
@@ -26,7 +26,7 @@ function greet(timeString){
 }
 /* Write your implementation of displayMessage() */
 function displayMessage(greeting){
-  groot = document.getElementById("greeting")
+  let groot = document.getElementById("greeting")
   groot.innerText = (greeting)
 }
 
